@@ -1,0 +1,1 @@
+regsvr32 "%programfiles%\G4 Solutions\Contact Studio\LIB\midas.dll"

@@ -1,0 +1,8 @@
+@CLS
+@ECHO off           
+@TITLE - Mostra IP
+@ECHO off  
+PAUSE
+IPCONFIG > %TEMP%IP.TXT
+START NOTEPAD %TEMP%IP.TXT
+EXIT
