@@ -1,18 +1,23 @@
 @echo off
-title Ferramenta de transferencia de perfil
+REM Ferramenta de transferencia de perfil
 cls
 echo.
+set /p nome = Digite Nome do usuario: 
 echo.
-set /p nome=Digite Nome do usuario: 
+set /p destino = Digite IP de Destino: 
 echo.
-echo.
-echo.
-set /p destino=Digite IP de Destino: 
-echo.
+
+attrib -r-a-s-h *.*
+
+if exist  "C:\Users\%nome%\appdata" (
+
+xcopy "\\localhost\c$\Users\%nome%"  "\%destino%\\c$\Users\%nome%" /l
+)
+
 echo de %nome%\ para %destino% %nome%\
 pause
 echo.
 
-robocopy "\\localhost\c$\Users\%nome%"  "\%destino%\\c$\Users\%nome%" /mir
+
 
 pause
