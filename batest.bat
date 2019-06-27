@@ -102,7 +102,7 @@ pause
 REM goto inicio
 
 :op13
-start C:\Windows\System32\drivers\etc
+start \\localhost\c$\Windows\System32\drivers\etc
 goto inicio
 
 :opx
