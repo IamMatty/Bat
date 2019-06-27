@@ -41,8 +41,9 @@ if %opcao% ==10 goto op10
 if %opcao% ==11 goto op11
 if %opcao% ==12 goto op12
 if %opcao% == r goto inicio 
-if %opcao% GEQ 13 goto erro
 if %opcao% ==x goto opx
+if %opcao% GEQ 13 goto erro
+
 
 
 :op1
