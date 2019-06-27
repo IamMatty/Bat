@@ -16,7 +16,7 @@ echo บ[1]         Abrir CMD              บ   [6]   Painel de Controle        บ  
 echo ฬอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออน
 echo บ[2]Abrir CMD como Administrador    บ   [7]  Configuracao de som        บ   [12]  Desinstalar Programas     บ
 echo ฬอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออน
-echo บ[3]Abrir Gerenciador de Tarefa     บ   [8]  Relatorio do Sistema       บ                                   บ
+echo บ[3]Abrir Gerenciador de Tarefa     บ   [8]  Relatorio do Sistema       บ   [13]  Pasta Host                บ
 echo ฬอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออน
 echo บ[4] Propriedades de Internet       บ   [9]     Abrir Regedit           บ                                   บ
 echo ฬอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออน
@@ -40,8 +40,8 @@ if %opcao% ==9 goto op9
 if %opcao% ==10 goto op10
 if %opcao% ==11 goto op11
 if %opcao% ==12 goto op12
-if %opcao% == r goto inicio 
-if %opcao% GEQ 13 goto erro
+if %opcao% ==13 goto op13
+if %opcao% GEQ 14 goto erro
 if %opcao% ==x goto opx
 
 
@@ -100,6 +100,10 @@ REM SET /p program =. > nul
 REM product where name="%program%" call unistall /nointeractive
 pause
 REM goto inicio
+
+:op13
+start C:\Windows\System32\drivers\etc
+goto inicio
 
 :opx
 exit
