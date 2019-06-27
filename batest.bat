@@ -12,9 +12,9 @@ echo บ""""""""""""""""""""""" /_/ /___/  /_/ |_/\___/\____/_.___/ .___/\____/   
 echo บ"""""""""""""""""""""""                                  /_/              """""""""""""""""""""""""""""""""บ
 echo ฬอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน
 echo ฬอออออออออออออออออออออออออออออออออออหอออออออออออออออออออออออออออออออออออหอออออออออออออออออออออออออออออออออออน
-echo บ[1]         Abrir CMD              บ   [6]   Painel de Controle        บ                                   บ
+echo บ[1]         Abrir CMD              บ   [6]   Painel de Controle        บ   [11] Transferencia de Perfil    บ
 echo ฬอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออน
-echo บ[2]Abrir CMD como Administrador    บ   [7]  Configuracao de som        บ                                   บ
+echo บ[2]Abrir CMD como Administrador    บ   [7]  Configuracao de som        บ   [12]  Desinstalar Programas     บ
 echo ฬอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออน
 echo บ[3]Abrir Gerenciador de Tarefa     บ   [8]  Relatorio do Sistema       บ                                   บ
 echo ฬอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออน
@@ -22,7 +22,7 @@ echo บ[4] Propriedades de Internet       บ   [9]     Abrir Regedit           บ  
 echo ฬอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออน
 echo บ[5]      Abrir Servicos            บ   [10]      Fix Proxy             บ   [N]      Proxima Pagina         บ
 echo ฬอออออออออออออออออออออออออออออออออออสอออออออออออออออออออออออออออออออออออสอออออออออออออออออออออออออออออออออออน
-echo บ[x]                                                Sair                                                    บ
+echo บ[x]                                                Sair                                                 [x]บ
 echo ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
 echo.
 echo.
@@ -38,8 +38,10 @@ if %opcao% ==7 goto op7
 if %opcao% ==8 goto op8
 if %opcao% ==9 goto op9
 if %opcao% ==10 goto op10
+if %opcao% ==11 goto op11
+if %opcao% ==12 goto op12
 if %opcao% == r goto inicio 
-if %opcao% GEQ 11 goto erro 
+if %opcao% GEQ 13 goto erro
 if %opcao% ==x goto opx
 
 
@@ -80,8 +82,24 @@ regedit
 goto inicio
 
 :op10
-\\10.220.9.41\scan\TI\Cassio\Ultilitarios\Fixproxy.bat
+C:\Users\mateus.franca\Documents\GitHub\Bat\proxy.bat
+rem \\10.220.9.41\scan\TI\Mateus\bat\proxy.bat
 goto inicio
+
+:op11
+C:\Users\mateus.franca\Documents\GitHub\Bat\trasf.bat
+rem \\10.220.9.41\scan\TI\Mateus\bat\trasf.bat
+goto inicio
+
+:op12
+wmic product get name,version
+
+REM ECHO product where name="" call unistall /nointeractive
+REM ECHO Digite o nome do programa:
+REM SET /p program =. > nul
+REM product where name="%program%" call unistall /nointeractive
+pause
+REM goto inicio
 
 :opx
 exit

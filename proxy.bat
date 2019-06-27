@@ -3,7 +3,7 @@ title Fix Proxy
 :inicio
 
 color f0
-mode 41,40
+mode 34,20
 
 cls
 echo ษออออออออออออออออออออออออออออออออป
@@ -17,13 +17,15 @@ echo บ[2]บFix proxy NEO ENERGIA     บ
 echo ฬอออฮออออออออออออออออออออออออออน
 echo บ[3]บFix proxy CLARO           บ
 echo ฬอออฮออออออออออออออออออออออออออน
-echo บ[4]บFix proxy                 บ
+echo บ[4]บFix proxy  TIM            บ
 echo ฬอออฮออออออออออออออออออออออออออน
 echo บ[5]บFix proxy CIELO           บ
 echo ฬอออฮออออออออออออออออออออออออออน
 echo บ[6]บFix proxy FIRST DATA      บ
 echo ฬอออฮออออออออออออออออออออออออออน
-echo บ[X]บ        exit              บ
+echo บ[B]บ        Back              บ
+echo ฬอออฮออออออออออออออออออออออออออน
+echo บ[X]บ        Exit              บ
 echo ศอออสออออออออออออออออออออออออออผ
 
 set /p sel=Operacoes: 
@@ -34,6 +36,7 @@ if %sel% ==3 goto sel3
 if %sel% ==4 goto sel4
 if %sel% ==5 goto sel5
 if %sel% ==6 goto sel6
+if %sel% ==b goto selb
 if %sel% ==x goto selx
 if %sel% geq 7 goto sele
 
@@ -61,6 +64,9 @@ goto inicio
 :sel6
 call \\10.220.9.41\c$\ftp\Regs\Proxy_FirstData.reg
 goto inicio
+
+:selb
+C:\Users\mateus.franca\Documents\GitHub\Bat\batest.bat
 
 :selx
 exit
