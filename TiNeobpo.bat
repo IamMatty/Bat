@@ -18,9 +18,9 @@ echo บ[2]Abrir CMD como Administrador    บ   [7]  Configuracao de som        บ  
 echo ฬอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออน
 echo บ[3]Abrir Gerenciador de Tarefa     บ   [8]  Relatorio do Sistema       บ   [13]       Pasta Host           บ
 echo ฬอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออน
-echo บ[4] Propriedades de Internet       บ   [9]     Abrir Regedit           บ   [14]    Ferramentas ADM         บ
+echo บ[4] Propriedades de Internet       บ   [9]     Abrir Regedit           บ   [14]     Proxima Pagina         บ
 echo ฬอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออน
-echo บ[5]      Abrir Servicos            บ   [10]      Fix Proxy             บ   [N]      Proxima Pagina         บ
+echo บ[5]      Abrir Servicos            บ   [10]      Fix Proxy             บ                                   บ
 echo ฬอออออออออออออออออออออออออออออออออออสอออออออออออออออออออออออออออออออออออสอออออออออออออออออออออออออออออออออออน
 echo บ[x]                                                Sair                                                 [x]บ
 echo ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
