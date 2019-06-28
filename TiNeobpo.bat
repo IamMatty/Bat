@@ -1,4 +1,5 @@
 @echo off
+title Ti neobpo
 :inicio
 mode 110,25
 cls

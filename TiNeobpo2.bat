@@ -1,5 +1,5 @@
 @echo off
-title Ti neobpo
+title Ti neobpo PG2
 :inicio
 mode 75,26
 cls
