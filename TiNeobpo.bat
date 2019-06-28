@@ -16,9 +16,9 @@ echo บ[1]         Abrir CMD              บ   [6]   Painel de Controle        บ  
 echo ฬอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออน
 echo บ[2]Abrir CMD como Administrador    บ   [7]  Configuracao de som        บ   [12]  Desinstalar Programas     บ
 echo ฬอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออน
-echo บ[3]Abrir Gerenciador de Tarefa     บ   [8]  Relatorio do Sistema       บ   [13]  Pasta Host                บ
+echo บ[3]Abrir Gerenciador de Tarefa     บ   [8]  Relatorio do Sistema       บ   [13]       Pasta Host           บ
 echo ฬอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออน
-echo บ[4] Propriedades de Internet       บ   [9]     Abrir Regedit           บ                                   บ
+echo บ[4] Propriedades de Internet       บ   [9]     Abrir Regedit           บ   [14]    Ferramentas ADM         บ
 echo ฬอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออน
 echo บ[5]      Abrir Servicos            บ   [10]      Fix Proxy             บ   [N]      Proxima Pagina         บ
 echo ฬอออออออออออออออออออออออออออออออออออสอออออออออออออออออออออออออออออออออออสอออออออออออออออออออออออออออออออออออน
@@ -41,9 +41,10 @@ if %opcao% ==10 goto op10
 if %opcao% ==11 goto op11
 if %opcao% ==12 goto op12
 if %opcao% ==13 goto op13
+if %opcao% ==14 goto op14
 if %opcao% == r goto inicio 
 if %opcao% ==x goto opx
-if %opcao% GEQ 14 goto erro
+if %opcao% GEQ 15 goto erro
 
 :op1
 start cmd
@@ -82,7 +83,9 @@ regedit
 goto inicio
 
 :op10
-C:\Users\mateus.franca\Documents\GitHub\Bat\proxy.bat
+start \\10.220.9.41\scan\ti\Cassio\Utilidades\Fixproxy.bat
+goto inicio
+
 rem \\10.220.9.41\scan\TI\Mateus\bat\proxy.bat
 goto inicio
 
@@ -104,6 +107,10 @@ REM goto inicio
 :op13
 start \\localhost\c$\Windows\System32\drivers\etc
 goto inicio
+
+:op14
+start \\10.220.9.41\scan\ti\Cassio\Utilidades\TiNeobpo2.bat
+goto opx
 
 :opx
 exit

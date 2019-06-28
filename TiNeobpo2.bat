@@ -20,9 +20,9 @@ echo บ[2]    Servico de componentes      บ   [7]  Servicos de Componentes    บ
 echo ฬอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออน
 echo บ[3]  Gerenciamento do Computador   บ   [8]  Fontes de Dados   ODBC     บ
 echo ฬอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออน
-echo บ[4]   Diretiva de Segunca Local    บ   [9]     Abrir Regedit           บ
+echo บ[4]   Diretiva de Segunca Local    บ   [9]    Visualizar Evento        บ
 echo ฬอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออน
-echo บ[5]        Abrir Servicos          บ   [10]   Visualizar Evento        บ
+echo บ[5]        Abrir Servicos          บ   [10]         Voltar             บ
 echo ฬอออออออออออออออออออออออออออออออออออสอออออออออออออออออออออออออออออออออออน
 echo บ[x]                             Sair                      ษออออออออออออออป
 echo ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออบ By SkyFury   บ
@@ -79,12 +79,13 @@ odbcad32.exe
 goto inicio
 
 :op9
-regedit
+eventvwr.msc
 goto inicio
 
 :op10
-eventvwr.msc
-goto inicio
+start \\10.220.9.41\scan\ti\Cassio\Utilidades\TiNeobpo.bat
+goto opx
+
 
 :opx
 exit
