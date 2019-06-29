@@ -1,5 +1,5 @@
 @echo off
-title Fix Proxy
+title Ti neobpo-Fix Proxy
 :inicio
 
 color f0
@@ -23,7 +23,7 @@ echo บ[5]บFix proxy CIELO           บ
 echo ฬอออฮออออออออออออออออออออออออออน
 echo บ[6]บFix proxy FIRST DATA      บ
 echo ฬอออฮออออออออออออออออออออออออออน
-echo บ[B]บ        Back              บ
+echo บ[B]บ    Coletar Proxy         บ
 echo ฬอออฮออออออออออออออออออออออออออน
 echo บ[X]บ        Exit              บ
 echo ศอออสออออออออออออออออออออออออออผ
@@ -66,7 +66,8 @@ call \\10.220.9.41\c$\ftp\Regs\Proxy_FirstData.reg
 goto inicio
 
 :selb
-C:\Users\mateus.franca\Documents\GitHub\Bat\batest.bat
+call \\10.220.9.41\scan\ti\Cassio\Utilidades\Extrair.bat
+goto selx
 
 :selx
 exit
