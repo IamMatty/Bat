@@ -11,17 +11,17 @@ echo บSelecione a operacao para extrairบ
 echo ศอออออออออออออออออออออออออออออออออผ
 
 echo ษอออหออออออออออออออออออออออออออป
-echo บ[1]บFix proxy NET             บ
+echo บ[1]บGet proxy NET             บ
 echo ฬอออฮออออออออออออออออออออออออออน
-echo บ[2]บFix proxy NEO ENERGIA     บ
+echo บ[2]บGet proxy NEO ENERGIA     บ
 echo ฬอออฮออออออออออออออออออออออออออน
-echo บ[3]บFix proxy CLARO           บ
+echo บ[3]บGet proxy CLARO           บ
 echo ฬอออฮออออออออออออออออออออออออออน
-echo บ[4]บFix proxy  TIM            บ
+echo บ[4]บGet proxy  TIM            บ
 echo ฬอออฮออออออออออออออออออออออออออน
-echo บ[5]บFix proxy CIELO           บ
+echo บ[5]บGet proxy CIELO           บ
 echo ฬอออฮออออออออออออออออออออออออออน
-echo บ[6]บFix proxy FIRST DATA      บ
+echo บ[6]บGet proxy FIRST DATA      บ
 echo ฬอออฮออออออออออออออออออออออออออน
 echo บ[B]บ        Back              บ
 echo ฬอออฮออออออออออออออออออออออออออน
