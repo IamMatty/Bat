@@ -19,9 +19,9 @@ echo บ[2]Abrir CMD como Administrador    บ   [7]  Configuracao de som        บ  
 echo ฬอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออน
 echo บ[3]Abrir Gerenciador de Tarefa     บ   [8]  Relatorio do Sistema       บ   [13]       Pasta Host           บ
 echo ฬอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออน
-echo บ[4] Propriedades de Internet       บ   [9]     Abrir Regedit           บ   [14]     Proxima Pagina         บ
+echo บ[4] Propriedades de Internet       บ   [9]     Abrir Regedit           บ   [14]     Net Sms Network        บ
 echo ฬอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออฮอออออออออออออออออออออออออออออออออออน
-echo บ[5]      Abrir Servicos            บ   [10]      Fix Proxy             บ                                   บ
+echo บ[5]      Abrir Servicos            บ   [10]      Fix Proxy             บ   [15]     Proxima Pagina         บ
 echo ฬอออออออออออออออออออออออออออออออออออสอออออออออออออออออออออออออออออออออออสอออออออออออออออออออออออออออออออออออน
 echo บ[x]                                                Sair                                                 [x]บ
 echo ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
@@ -43,9 +43,10 @@ if %opcao% ==11 goto op11
 if %opcao% ==12 goto op12
 if %opcao% ==13 goto op13
 if %opcao% ==14 goto op14
+if %opcao% ==15 goto op15
 if %opcao% == r goto inicio 
 if %opcao% ==x goto opx
-if %opcao% GEQ 15 goto erro
+if %opcao% GEQ 16 goto erro
 
 :op1
 start cmd
@@ -110,8 +111,14 @@ start \\localhost\c$\Windows\System32\drivers\etc
 goto inicio
 
 :op14
+start \\10.220.9.41\scan\ti\Cassio\Utilidades\NetSmsNetwork.bat
+goto inicio
+
+:op15
 start \\10.220.9.41\scan\ti\Cassio\Utilidades\TiNeobpo2.bat
 goto opx
+
+
 
 :opx
 exit
